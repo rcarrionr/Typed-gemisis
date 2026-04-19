@@ -1,0 +1,60 @@
+/* src/App.css */
+html, body, #root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prohibir scroll a nivel global */
+  background-color: #FFFFFF;
+}
+
+.reader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: 'Inter', system-ui, sans-serif;
+  padding: 4vh 4vw;   /* Margen de seguridad */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-height: 100%;    /* No puede ser más alto que la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.typed-text {
+  font-weight: 900;
+  line-height: 1.1;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  display: inline-block;
+}
+
+.navigation-hint {
+  position: absolute;
+  bottom: 3vh;
+  right: 3vw;
+  font-size: 1.5rem;
+  color: #000000;
+  font-weight: 700;
+  background: #FFFFFF;
+  padding: 5px 10px;
+  opacity: 0.5; /* Un poco discreto para no distraer */
+}
+
+/* El cursor ahora heredará el tamaño de la fuente de su padre */
+.typed-cursor {
+  color: #000000;
+  font-size: inherit; 
+  font-weight: 900;
+}
